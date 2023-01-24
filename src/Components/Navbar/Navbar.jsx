@@ -1,26 +1,45 @@
-import React from 'react';
-import './Navbar.css';
+import React from "react";
+import "./Navbar.css";
+import Toggle from "../Toggle/Toggle";
+import { Link } from "react-scroll";
+import Logo from "../Logo/logo";
 
 export const Navbar = () => {
   return (
-    <div className='n-wrapper'>
-        <div className='n-left'>
-            <div className='n-name'>Ansh</div>
-            <span> Toggle </span>
+    <div className="n-wrapper">
+      <div className="n-left">
+        <div className="n-name">
+          <Logo />
         </div>
-        <div className='n-right'>
-        <div className= 'n-list'>
-            <ul style={{listStyleType: 'none'}}>
-                <li>Home</li>
-                <li>About</li>
-                <li>Experience</li>
-                <li>Projects</li>
-            </ul>
+        <Toggle />
+      </div>
+      <div className="n-right">
+        <div className="n-list">
+          <ul style={{ listStyleType: "none" }}>
+            <Link
+              spy={true}
+              smooth={true}
+              to="Navbar"
+              activeClass="activeClass"
+            >
+              <li>Home</li>
+            </Link>
+            <Link spy={true} smooth={true} to="About">
+              <li>About</li>
+            </Link>
+            <Link spy={true} smooth={true} to="">
+              <li>Skills</li>
+            </Link>
+            <Link spy={true} smooth={true} to="Experience">
+              <li>Experience</li>
+            </Link>
+            <Link spy={true} smooth={true} to="Portfolio">
+              <li>Projects</li>
+            </Link>
+          </ul>
         </div>
-        <button className='button'>
-            Contact
-        </button>
-        </div>
+        <button className="button">Contact</button>
+      </div>
     </div>
-  )
-}
+  );
+};

@@ -1,0 +1,30 @@
+.logoContainer:hover svg {
+  fill: var(--orange) !important;
+}
+.logoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.logoContainer ul {
+  list-style: none;
+}
+.logoContainer li {
+  display: inline-block;
+  background: #151719;
+  padding: 6px 6px 0 6px;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+
+.logoContainer li:hover {
+  border-radius: 15px;
+  background: var(--orange);
+}
+.logoContainer svg {
+  transition: none;
+  fill: black;
+  width: 100px;
+}

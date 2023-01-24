@@ -1,0 +1,59 @@
+.footer {
+  display: flex;
+  align-items: center;
+  margin: -0.5rem -3.5rem;
+  position: relative;
+  margin-top: -7rem;
+}
+.f-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem;
+  gap: 4rem;
+  color: white;
+}
+.f-icons {
+  display: flex;
+  gap: 2rem;
+}
+.f-icons :hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  cursor: pointer;
+}
+.f-content {
+  width: 100%;
+}
+
+.f-content p {
+  padding: 10px 15px;
+  border-radius: 20px;
+  background: var(--yellow);
+  width: 100%;
+  margin: 20px 0 10px 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #eceded;
+  font-weight: 300;
+}
+
+.f-content p:hover {
+  background: var(--orange);
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .f-content {
+    transform: scale(0.5);
+  }
+}
