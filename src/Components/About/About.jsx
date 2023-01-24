@@ -22,9 +22,12 @@ const About = () => {
         <span style={{ color: darkMode ? "white" : "" }}>About</span>
         <span> Me</span>
         <span>
-          Lorenm am is yhe besr ncn mam ,,a jcjcj
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          I am currently pursuing B.Tech in Chemical Engineering at IIT BHU.
+          <br /> I have keen interest in Web Development, DS & Algo
+          <br /> and I also do competitive programming occasionally.
+          <br /> I am an ardent follower of the latest technologies
+          <br /> and I can also do a bit of back-end.
+          <br />I am also good at mobile app development using Flutter.
         </span>
         <a href={Resume} download>
           <button className="button s-button">Download Resume</button>
@@ -41,10 +44,8 @@ const About = () => {
         >
           <Card
             emoji={Heartemoji}
-            heading={"My Passion"}
-            detail={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate."
-            }
+            heading={"Programming Languages"}
+            detail={" C++, Python, JavaScript, HTML, CSS, Dart"}
           />
         </motion.div>
 
@@ -55,9 +56,9 @@ const About = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"My Passion"}
+            heading={"Libraries & Frameworks"}
             detail={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate."
+              "React, Node.js, Express.js, Flutter, Bootstrap, Material UI, Redux, Next.js, Mongo DB, Flask, jQuery, Bootstrap, TailwindCSS"
             }
           />
         </motion.div>
@@ -69,9 +70,9 @@ const About = () => {
         >
           <Card
             emoji={Humble}
-            heading={"My Passion"}
+            heading={"Tools & Softwares"}
             detail={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate."
+              "Git, Github, Heroku, Firebase, VSCode, Anaconda, Android studio, Android, Canva, Jupyter, Linux, Ubuntu."
             }
           />
         </motion.div>

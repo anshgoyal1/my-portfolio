@@ -5,6 +5,14 @@ import { Link } from "react-scroll";
 import Logo from "../Logo/logo";
 
 export const Navbar = () => {
+  function handleClick() {
+    var element = document.getElementById("contact");
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  }
   return (
     <div className="n-wrapper">
       <div className="n-left">
@@ -27,7 +35,7 @@ export const Navbar = () => {
             <Link spy={true} smooth={true} to="About">
               <li>About</li>
             </Link>
-            <Link spy={true} smooth={true} to="">
+            <Link spy={true} smooth={true} to="skills">
               <li>Skills</li>
             </Link>
             <Link spy={true} smooth={true} to="Experience">
@@ -38,7 +46,10 @@ export const Navbar = () => {
             </Link>
           </ul>
         </div>
-        <button className="button">Contact</button>
+        <button className="button" onClick={handleClick}>
+          {" "}
+          Contact
+        </button>
       </div>
     </div>
   );

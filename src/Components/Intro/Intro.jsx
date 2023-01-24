@@ -17,18 +17,33 @@ export const Intro = () => {
   const transition = { duration: 2, type: "spring" };
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+
+  function handleClick() {
+    var element = document.getElementById("contact");
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  }
   return (
     <div className="intro ">
       <div className="i-left">
         <div className="i-name">
-          <span style={{ color: darkMode ? "white" : "" }}> Hi! I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>
+            {" "}
+            Hi! My name is
+          </span>
           <span> Ansh Goyal</span>
           <span>
-            A Full stack Developer With Excellent Skills in Programming, Web
-            Development, Flutter Development, Competitive Programming.{" "}
+            I am an engineering student at the Indian Institute of Technology
+            (BHU), Varanasi. I like pretty much everything related to web
+            development. Free? Let's build something together!
           </span>
         </div>
-        <button className="button i-button">Hire me!</button>
+        <button className="button i-button" onClick={handleClick}>
+          Hire me!
+        </button>
 
         <div className="i-icons">
           <a href={"https://github.com/anshgoyal1"}>
