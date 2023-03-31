@@ -1,10 +1,9 @@
-.p-card {
+.ProfileCard {
   width: 14.5rem;
-  height: 25rem;
+  height: 30rem;
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   align-items: center;
   text-align: center;
   background: rgba(255, 255, 255, 0.26);
@@ -14,49 +13,62 @@
   padding: 0px 26px 2px 26px;
 }
 
-.p-card > img {
-  transform: scale(0.9);
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  margin-bottom: -1rem;
-  margin-top: -0.6rem;
-}
-.p-technologies {
-  color: var(--yellow);
-  font-size: 16px;
-  padding: 0px 10px;
+/* Profile Images */
+.ProfileImages {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.p-heading {
+.ProfileImages > img:nth-of-type(1) {
+  width: 100%;
+}
+
+/* Profile Name */
+.ProfileName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 10px;
+}
+
+.ProfileName > span:nth-of-type(1) {
   color: var(--orange);
-  font-size: 20px;
+  font-size: 25px;
   padding: 0px 10px;
   font-weight: bold;
 }
-.p-description {
+.ProfileName > span:nth-of-type(2) {
   color: var(--gray);
-  font-size: 14px;
+  font-size: 15px;
   padding: 0px 10px;
+  font-weight: bold;
 }
-.p-icons {
-  margin: 10px 10px;
-  transform: scale(0.8);
-  width: 50px;
-  height: 50px;
+.ProfileName > span:nth-of-type(3) {
+  color: var(--black);
+  font-size: 15px;
+  padding: 0px 10px;
+  font-weight: normal;
 }
-.p-icons:hover {
+
+.p-button {
+  position: relative;
+  width: 100px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  background: var(--orange);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transition: 0.5s;
+  transition: 0.3s;
 }
-@media screen and (max-width: 480px) {
-  .p-card {
-    width: auto;
-  }
+.followStatus {
+  position: absolute;
+  bottom: 5px;
 }

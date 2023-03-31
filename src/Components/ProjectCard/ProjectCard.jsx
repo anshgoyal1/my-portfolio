@@ -1,24 +1,34 @@
 import React from "react";
 import "./ProjectCard.css";
 
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const ProjectCard = (props) => {
   return (
-    <div className="p-card">
-      <img src={props.image} alt="" />
-      <div>
-        <h5 className="p-heading">{props.title}</h5>
-        <p className="p-technologies">{props.tech} </p>
-        <p className="p-description">{props.description}</p>
-        <div className="p-links">
-          <a href={props.githubLink}>
-            <FaGithub className="p-icons" />
-          </a>
-          <a href={props.projectLink} className="p-icons">
-            <FaExternalLinkAlt className="p-icons" />
-          </a>
-        </div>
+    <div className="ProfileCard">
+      <div className="ProfileImages">
+        <img src={props.image} alt="CoverImage" style={{ width: "17rem" }} />
       </div>
+      <div className="ProfileName">
+        <span>{props.title}</span>
+        <span>{props.tech}</span>
+        <span>{props.description}</span>
+      </div>
+
+      <div className="followStatus">
+        <hr />
+        <a href={props.githubLink}>
+          <button className="button p-button" style={{ color: "white" }}>
+            Github
+          </button>
+        </a>
+        <a href={props.projectLink}>
+          <button className="button p-button" style={{ color: "white" }}>
+            Link
+          </button>
+        </a>
+        <hr />
+      </div>
+
+      <span></span>
     </div>
   );
 };
